@@ -1,0 +1,48 @@
+<html lang = 'fr'>
+
+<head>
+    <meta charset = 'utf-8'>
+    <title> base sql </title>
+    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/style.css') }}"
+</head>
+
+<body>
+    
+    <h1>base</h1>
+    
+    <h2>Affichage de la page<h2>
+    
+    <p1>LA BASE</p1>
+    
+    <table> 
+        <tr>
+            <th> <h2> id    </h2> </th>
+            <th> <h2> tarifs   </h2> </th>
+            <th> <h2> varietes   </h2> </th>
+
+        </tr>
+        
+        {% for element in elements %} 
+            <tr> 
+                <td> <p> {{ element[0] }} </p> </td> 
+                <td> <p> {{ element[1] }} </p> </td>
+                <td> <p> {{ element[2] }} </p> </td>
+                
+               
+            </tr>
+        {% endfor %}        
+    </table>
+    
+    
+    
+    
+            <a href="{{url_for('accueil')}}" class="nav-lien">Accueil</a>
+            <a href="{{url_for('graines')}}" class="nav-lien">Graines</a>
+            <a href="{{url_for('contact')}}" class="nav-lien">Contact</a>
+            <a href="{{url_for('requete')}}" class="nav-lien">requete</a>
+            <a href="{{url_for('base')}}" class="nav-lien">base</a> 
+    
+    
+</body>
+</html> 
+

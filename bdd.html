@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="wiewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+   <title>Bdd</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="liens">
+      <a href="accueil.html">accueil</a>
+      <a href="graines">graines</a>
+      <a href="contact.html">contact</a>
+    
+
+      </div>
+
+    </nav>
+    <ul>
+{% for personne in personnes %}
+<li>le nom de la puces est {{ personne[1] }}, la puces {{personne[2]}} et le prix est de {{personne[3]}}$</li>
+{% endfor %}
+</ul>
+  </body>
+</html>

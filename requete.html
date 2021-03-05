@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>requete sql</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css') }}" />
+</head>
+
+<body>
+
+    <h1>requete</h1>
+
+    <h1>Voici la deuxième page qui permettra de soumettre des requêtes SQL à la base de donnée</h1>
+
+    <p>  modifier la table en rentrant votre commande SQL: </p>  
+        
+    <!-- Boite de diablogue pour faire sa requete -->
+    <form action = "/requete" method = "POST">
+        <label>Votre requête : </label>
+        <input type = "number" name = "id" value = "..." /> 
+        <input type = "text" name = "tarifs" value = "..." /> 
+        <input type = "text" name = "varietes" value = "..." /> 
+        <input type = "submit" value = "Envoyer" /> 
+    </form>
+    
+    <br>
+            <a href="{{url_for('accueil')}}" class="nav-lien">Accueil</a>
+            <a href="{{url_for('graines')}}" class="nav-lien">Graines</a>
+            <a href="{{url_for('contact')}}" class="nav-lien">Contact</a>
+            <a href="{{url_for('requete')}}" class="nav-lien">requete</a>
+            <a href="{{url_for('base')}}" class="nav-lien">base</a> 
+    
+
+    <br>
+   
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="wiewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <title>Login</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="liens">
+                  </div>
+            <a href="{{url_for('accueil')}}" class="nav-lien">Accueil</a>
+            <a href="{{url_for('graines')}}" class="nav-lien">Graines</a>
+            <a href="{{url_for('contact')}}" class="nav-lien">Contact</a>
+            <a href="{{url_for('requete')}}" class="nav-lien">requete</a>
+            <a href="{{url_for('base')}}" class="nav-lien">base</a> 
+
+
+    </nav>
+    <h1>Avant de rentrer sur le site veuillez vous enregistrez</h1>
+      <form action="/site" method="POST">
+        <label>Votre nom: </label>
+        <input type="text" name="nom" value="" />
+        <input type="submit" value="Envoyer" />
+
+      </form>
+  </body>
+</html>

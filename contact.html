@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/css/style.css">
+    <meta name="wiewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.google.com/specimen/Akaya+Kanadaka?preview.text_type=custom">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <title>contact</title>
+  </head>
+  <body>
+  <h1>Bienvenue sur la page contact</h1>
+    <nav class="navigation">
+      <div class="liens">
+            <a href="{{url_for('accueil')}}" class="nav-lien">Accueil</a>
+            <a href="{{url_for('graines')}}" class="nav-lien">Graines</a>
+            <a href="{{url_for('contact')}}" class="nav-lien">Contact</a>
+            <a href="{{url_for('requete')}}" class="nav-lien">requete</a>
+            <a href="{{url_for('base')}}" class="nav-lien">base</a> 
+    
+
+            
+<div id="after_submit"></div>
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+  <div class="row">
+    <label class="required" for="name">Votre nom:</label><br />
+    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    <span id="name_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="email">Votre email:</label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    <span id="email_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="message">Votre message:</label><br />
+    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+    <span id="message_validation" class="error_message"></span>
+  </div>
+    
+    <input id="submit_button" type="submit" value="envoyer email" />
+</form>
+      </div>
+
+    </nav>
+  </body>
+</html>
